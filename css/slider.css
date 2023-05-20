@@ -1,0 +1,85 @@
+#featured{
+	max-width: 90%;
+	height: 600px;
+	object-fit: cover;
+	border: 2px solid black;
+	transition: opacity 0.25s ease-in-out;
+}
+#my-image.fade-out {
+	opacity: 0;
+  }
+
+.display_featured{
+	opacity: 1;
+	visibility:visible;
+}
+
+.thumbnail{
+	object-fit: cover;
+	min-width: 100px;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	opacity: 0.5;
+	margin: 5px;
+	border: 2px solid black;
+
+}
+
+.thumbnail:hover{
+	opacity:1;
+}
+
+.active_slider{
+	opacity: 1;
+}
+
+#slide-wrapper{
+	max-width: 500px;
+	display: flex;
+	min-height: 100px;
+	align-items: center;
+}
+
+#slide-wrapper:hover .arrow{
+	opacity: 1;	
+	visibility:visible;
+	
+}
+
+/* #slider{
+	width: 440px;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x:hidden;
+
+} */
+.fadeOutCSS{
+	transition: .3s;
+	transition: visibility 1s, opacity 1s;
+	visibility: hidden;
+	opacity: 0;
+}
+
+	
+
+.arrow{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	transition: .3s;
+	margin: 0 10px 0 10px;
+	transition: visibility 1s, opacity 1s;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.arrow:hover{
+	opacity: .5;
+	width: 35px;
+	height: 35px;
+}
+.item{
+	width: 150px;
+	margin: 0px 5px 0px 5px
+}

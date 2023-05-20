@@ -1,0 +1,124 @@
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+section {
+    padding: 60px;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    outline: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.faq {
+    padding: 120px 0 90px;
+   
+   
+}
+
+.faq .section-title {
+    margin-bottom: 54px;
+}
+
+.faq .section-title h2 {
+    margin-bottom: 22px;
+}
+
+.faq .accordion .card {
+    border: none;
+    margin-bottom: 30px;
+}
+
+.faq .accordion .card:not(:first-of-type) .card-header:first-child {
+    border-radius: 10px;
+}
+
+.faq .accordion .card .card-header {
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.faq .accordion .card .card-header h5 {
+    padding: 0;
+}
+
+.faq .accordion .card .card-header h5 button {
+   
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0 30px 0 70px;
+    height: 80px;
+    display: block;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.981);
+    text-align: left;
+    /* background: rgba(8, 8, 8, 0.102); */
+    -webkit-box-shadow: 0px -50px 140px 0px rgba(69, 81, 100, 0.1);
+    box-shadow: 0px -50px 140px 0px rgba(69, 81, 100, 0.1);
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.faq .accordion .card .card-header h5 button:after {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    color: white;
+    /* background-color: black; */
+    text-align: center;
+    background-image: -webkit-linear-gradient(-180deg, #8f8f8f 0%, #383838 30%, #000000 100%);
+    border-radius: 50%;
+    line-height: 100%;
+    content: '\f067';
+    font-size: 12px;
+    line-height: 18px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.faq .accordion .card .card-header h5 button.collapsed {
+    /* background: rgba(8, 8, 8, 0.102); */
+    border-radius: 10px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    /* border: 1px solid rgba(97, 125, 255, 0.2); */
+}
+
+.faq .accordion .card .card-header h5 button[aria-expanded="true"]:after {
+    content: "\f068";
+    color: black;
+    background-image: -webkit-linear-gradient(-180deg, #3a3a3a 0%, #979797 30%, #f2f2f2 100%);
+}
+
+.faq .accordion .card .card-body {
+    -webkit-box-shadow: 0px 15px 140px 0px rgba(69, 81, 100, 0.1);
+    box-shadow: 0px 15px 140px 0px rgba(69, 81, 100, 0.1);
+    border-radius: 0 0 10px 10px;
+    padding-top: 0;
+    margin-top: -6px;
+    padding-left: 72px;
+    padding-right: 70px;
+    padding-bottom: 23px;
+    color: white;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+a{
+    /* font-weight: bold; */
+    color: white;
+    text-decoration: underline;
+}
+a:hover{
+    font-weight: bold;
+    color: white;
+}

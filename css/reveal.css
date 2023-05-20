@@ -1,0 +1,29 @@
+
+.revealXL{
+  position: relative;
+  transform: translateX(-25px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.revealXR{
+    position: relative;
+    transform: translateX(25px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+.revealYB{
+    position: relative;
+    transform:translateY(85px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+.revealYT{
+    position: relative;
+    transform: translateY(-85px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+.reveal.active{
+  transform: translateX(0);
+  opacity: 1;
+}

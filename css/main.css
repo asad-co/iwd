@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.navClass {
+    width: 100%;
+    height: 100px;
+    background-color: #333333;
+    color: #EEEEEE;
+    position: sticky !important;
+    top: 0px !important;
+    z-index: 20;
+}
+
+.navlogo {
+    display: flex;
+}
+
+.navlogo img {
+    float: left;
+    width: 25%;
+    height: 100%;
+
+}
+
+.logo_image {
+    float: left;
+    margin-right: 10px;
+}
+
+.logoname {
+    display: block;
+    float: left;
+}
+
+.logoname span {
+    display: grid;
+    color: #EEEEEE;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navlist ul li {
+    display: inline;
+    margin-right: 5%;
+}
+.z2000{
+    z-index: 2000;
+}
+/* 
+.background {
+    background: rgba(0, 0, 0, 0.7) url('../bg/bg_1.jpg');
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 700px;
+} */
+.background_text{
+    margin:200px 0% 0% 0%;
+    text-align: center;
+    color: white;
+}
+.background2 {
+    width: 100%;
+    height: 700px;
+}
+.blacksheet{
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+/* 
+.background img {
+    mix-blend-mode: darken;
+} */
+
+.section {
+    width: 100%;
+    margin: auto;
+}
+
+.sectiontext {
+    margin-top: 300px;
+    display: block;
+    float: left;
+    color: #EEEEEE;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.sectionHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-flow: column wrap;
+}
+
+.sectionDescription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-flow: column wrap;
+}
+
+.bigText {
+    font-size: 41px;
+}
+
+.smallText {
+    font-size: 16;
+}
+
+.fullWidth {
+    width: 100% !important;
+}
+
+.fullHeight {
+    height: 100% !important;
+}
+
+.sectionBlock {
+    margin: 30px 5px 0px 5px;
+}
+
+.blocks {
+    position: relative;
+    width: 80%;
+}
+
+.left {
+    left: 0px;
+    float: left !important;
+    margin-left: 2%;
+
+}
+
+.right {
+    right: 0px;
+    float: right !important;
+    margin-right: 2%;
+}
+
+/* .breadcrumb_CSS {
+    background-color: #333333 !important;
+    color: #EEEEEE !important;
+    font-weight: bold;
+} */
+
+.active_CSS {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.testingbg {
+    background-color: black;
+}
+
+.leftpanel {
+    background-color: #CCCCCC;
+    color: #000000;
+    display: flex;
+    float: left;
+    padding: 10px 10px 10px 10px;
+    width: 15%;
+    height: fit-content;
+    margin-right: 2%;
+
+}
+
+.leftpanel ul li {
+    font-size: large;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+
+.nodecoration {
+    list-style-type: none;
+}
+
+.mainblock {
+    display: flex;
+    /* width: 100%; */
+    height: auto;
+    z-index: -1;
+}
+
+.rightpanel {
+    background-color: #CCCCCC;
+    color: #000000;
+    display: flex;
+    float: right;
+    padding: 10px 10px 10px 10px;
+
+    height: fit-content;
+    margin-left: 5%;
+    width: 20% !important;
+}
+
+.centralblock {
+
+    width: 70%;
+    margin: 0 10px 0 10px;
+    padding-right: 2%;
+
+}
+
+.cardTitleCSS {
+    font-size: 155% !important;
+}
+
+.cardTextCSS {
+    font-size: 125% !important;
+}
+
+.navLinkCSS {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: white;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
+}
+
+.navLinkCSS:hover {
+    font-weight: bold;
+    color: white;
+}
+
+.fillWhite {
+    fill: white;
+}
+
+.textWhite {
+    color: white;
+}
+
+.list-group a:hover{
+    font-weight: bold;
+}

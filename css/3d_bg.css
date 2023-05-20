@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.fullbg{
+  position: fixed;
+  width:100%;
+  height: 100%;
+  /* background-image: linear-gradient(to bottom right, rgb(104, 148, 251), rgb(0, 0, 241)); */
+  background: rgba(0, 0, 0, 0.7) url('../img/img\ \(9\).jpg');
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-blend-mode: darken;
+  top: 0;
+  z-index: -10;
+  overflow: hidden;
+}
+.img_10{
+  background: rgba(0, 0, 0, 0.7) url('../img/img\ \(10\).jpg');
+}
+.img_11{
+  background: rgba(0, 0, 0, 0.7) url('../img/img\ \(11\).jpg');
+  background-size:cover;
+}
+.img_12{
+  background: rgba(0, 0, 0, 0.7) url('../img/img\ \(12\).jpg');
+  background-size:cover;
+}
+
+.img_13{
+  background: rgba(0, 0, 0, 0.7) url('../img/img\ \(13\).jpg');
+  background-size:cover;
+}
+.img_15{
+  background: rgba(0, 0, 0, 0.7) url('../img/img\ \(15\).jpg');
+  background-size:cover;
+}
+.img_14{
+  background: rgba(0, 0, 0, 0.7) url('../img/img\ \(14\).jpg');
+
+  background-size:100% 130%;
+}
+.img_5{
+  background: rgba(0, 0, 0, 0.7) url('../img/img\ \(5\).jpg');
+  background-size:cover;
+}
+.newimg_1{
+  background: rgba(0, 0, 0, 0.7) url('../newimg/img1.jpg');
+  background-size:cover;
+}
+.newimg_2{
+  background: rgba(0, 0, 0, 0.7) url('../newimg/img2.jpg');
+  background-size:cover;
+}
+.newimg_3{
+  background: rgba(0, 0, 0, 0.7) url('../newimg/img3.jpg');
+  background-size:cover;
+}
+.newimg_4{
+  background: rgba(0, 0, 0, 0.7) url('../newimg/img4.jpg');
+  background-size:cover;
+}
+.newimg_5{
+  background: rgba(0, 0, 0, 0.7) url('../newimg/img5.png');
+  background-size:cover;
+}
+.newimg_6{
+  background: rgba(0, 0, 0, 0.7) url('../newimg/img6.jpg');
+  background-size:cover;
+}
+.newimg_7{
+  background: rgba(0, 0, 0, 0.7) url('../newimg/img7.jpg');
+  background-size:cover;
+}
+.newimg_8{
+  background: rgba(0, 0, 0, 0.7) url('../newimg/img8.jpg');
+  background-size:cover;
+}
+
+.fullbg .air{
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../bg/wave6.png");
+  background-size: 500px 50px
+}
+.fullbg .air.air1{
+  animation: wave 30s linear infinite;
+  z-index: -2;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+.fullbg .air.air2{
+  animation: wave2 15s linear infinite;
+  z-index: -3;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+.fullbg .air.air3{
+  animation: wave 30s linear infinite;
+  z-index: -4;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+.fullbg .air.air4{
+  animation: wave2 5s linear infinite;
+  z-index: -5;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+@keyframes wave{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: 1000px; 
+  }
+}
+@keyframes wave2{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: -1000px; 
+  }
+}

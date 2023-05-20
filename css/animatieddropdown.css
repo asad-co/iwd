@@ -1,0 +1,125 @@
+
+
+.menu-container {
+  margin-top: 20px;
+}
+
+
+.dropdown {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #c06162;
+  background: #34495e;
+  position: relative;
+  font-size: 18px;
+  perspective: 1000px;
+  z-index: 100;
+}
+
+.dropdown:hover {
+  background: #2980b9;
+  cursor: pointer;
+}
+.dropdown:hover .dropdown_menu li {
+  display: block;
+}
+
+.dropdown_menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  perspective: 1000px;
+  z-index: -1;
+}
+
+.dropdown_menu li {
+  display: none;
+  color: #fff;
+  background-color: #34495e;
+  padding: 10px 20px;
+  font-size: 16px;
+  opacity: 0;
+}
+
+.dropdown_menu li:hover {
+  background-color: #2980b9;
+}
+
+.dropdown:hover .dropdown_menu--animated {
+  display: block;
+}
+
+.dropdown_menu--animated {
+  display: none;
+}
+
+.dropdown_menu--animated li {
+  display: block;
+  opacity: 1;
+}
+
+.dropdown_menu-1 .dropdown_item-1 {
+  transform-origin: top center;
+  animation: slideDown 300ms 60ms ease-in-out forwards;
+}
+.dropdown_menu-1 .dropdown_item-2 {
+  transform-origin: top center;
+  animation: slideDown 300ms 120ms ease-in-out forwards;
+}
+.dropdown_menu-1 .dropdown_item-3 {
+  transform-origin: top center;
+  animation: slideDown 300ms 180ms ease-in-out forwards;
+}
+.dropdown_menu-1 .dropdown_item-4 {
+  transform-origin: top center;
+  animation: slideDown 300ms 240ms ease-in-out forwards;
+}
+.dropdown_menu-1 .dropdown_item-5 {
+  transform-origin: top center;
+  animation: slideDown 300ms 300ms ease-in-out forwards;
+}
+
+@-moz-keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-o-keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

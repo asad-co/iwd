@@ -1,0 +1,78 @@
+
+.chosen-value, .value-list {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.chosen-value {
+    
+    /* text-transform: uppercase; */
+    margin-top: 5px;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: 600;
+    /* letter-spacing: 4px; */
+    height: 3.5rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background-color: #fafcfd;
+    border: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+.chosen-value::-webkit-input-placeholder {
+    color: #333;
+}
+.chosen-value:hover {
+    background-color: #2e2e2e;
+    color: white;
+    cursor: pointer;
+}
+
+.chosen-value:hover::-webkit-input-placeholder {
+    color: #c2c2c2;
+}
+.chosen-value:focus, .chosen-value.open {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
+    outline: 0;
+    background-color: #161616;
+    color: white;
+}
+.chosen-value:focus::-webkit-input-placeholder, .chosen-value.open::-webkit-input-placeholder {
+    color: #d8d8d8;
+}
+.value-list {
+    list-style: none;
+    
+    box-shadow: 0px 5px 8px 0px rgba(247, 247, 247, 0.773);
+    overflow:scroll;
+    max-height: 0;
+    transition: 0.3s ease-in-out;
+}
+.value-list.open {
+    max-height: 320px;
+    overflow:auto;
+    width: 100%;
+}
+.value-list li {
+    position: relative;
+    height: 4rem;
+    background-color: #fafcfd;
+    padding: 1rem;
+    font-size: 1.1rem;
+    /* display: flex; */
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 1;
+}
+.value-list li:hover {
+     background-color: #161616;
+    color: white;
+}
+.value-list li.closed {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+}

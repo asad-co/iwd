@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: PermianSerifTypeface
+font link: https://www.fontsquirrel.com/fonts/permian-serif
+font author: Ilya Ruderman
+font author site: 
+
+
+icon designer: Alfredo @ IconsAlfredo.us
+icon designer link: /AlfredoCreates
+        
+{"bg":"transparent","icon-gradient-0":"#22526E","icon-gradient-1":"#BDB496","font":"#000000","slogan":"#141414"}
+      
