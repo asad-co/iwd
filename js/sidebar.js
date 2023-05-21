@@ -35,7 +35,7 @@ function addClass(e) {
   menu.classList.toggle('st-effect-1');
   menu.classList.toggle('st-menu-open');
   if(menu.style.zIndex == "1040"){
-    timeout = setTimeout(function() {  menu.style.zIndex = "-1";}, 400);
+    timeout = setTimeout(function() {  menu.style.zIndex = "-100";}, 400);
   }
   else{
     menu.style.zIndex = "1040"

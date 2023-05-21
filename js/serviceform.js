@@ -5,9 +5,11 @@ const inputField = document.getElementById('serviceInput')
 const dropdown1 = document.getElementById('city')
 const inputField1 = document.getElementById('cityInput')
 let valueArray = [];
+let valueArray1 = [];
 // const dropdownArray = [... document.querySelectorAll('li')];
 const dropdownArray1 = [... $('#city li')];
 const dropdownArray = [... $('#service li')];
+// console.log(dropdown)
 console.log(typeof dropdownArray)
 
 const closeDropdown = () => {
@@ -80,7 +82,7 @@ document.addEventListener('click', (evt) => {
 //dropdown1.classList.add('open');
 //inputField1.focus(); // Demo purposes only
 dropdownArray1.forEach(item => {
-  valueArray.push(item.textContent);
+  valueArray1.push(item.textContent);
 });
 
 
@@ -89,8 +91,8 @@ inputField1.addEventListener('input', () => {
   let inputValue = inputField1.value.toLowerCase();
   let valueSubstring;
   if (inputValue.length > 0) {
-    for (let j = 0; j < valueArray.length; j++) {
-      if (!(inputValue.substring(0, inputValue.length) === valueArray[j].substring(0, inputValue.length).toLowerCase())) {
+    for (let j = 0; j < valueArray1.length; j++) {
+      if (!(inputValue.substring(0, inputValue.length) === valueArray1[j].substring(0, inputValue.length).toLowerCase())) {
         dropdownArray[j].classList.add('closed');
       } else {
         dropdownArray[j].classList.remove('closed');
