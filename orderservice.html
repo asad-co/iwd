@@ -15,74 +15,96 @@
     <link rel="stylesheet" href="./Font Awesome/css/all.min.css">
     <link rel="stylesheet" href="./Font Awesome/css/fontawesome.min.css">
 
-    
+
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery_363.js"></script>
   </head>
 
   <body>
-    <div id="st-container" class="st-container">
+    <div class="fullbg img_12"></div>
+
+
+    <div id="st-container" class="st-container" style="margin-top: 90px;">
 
       <nav class="st-menu st-effect-1">
         <aside style="font-size: 5ch; font-weight: bold;">
 
           <p> Menu </p>
-          <a href="javascript:void(0)">
+          <a href="./index.html">
             <i class="fa-sharp fa-solid fa-house-chimney"></i>
             Home
           </a>
-          <a href="javascript:void(0)">
+          <a href="./services.html">
             <i class="fa-solid fa-taxi"></i>
             Our Services
           </a>
-          <a href="javascript:void(0)">
-            <i class="fa-solid fa-plus"></i>
-            <label for="touch"><span id="dropdownCatagories">Catagories</span></label>
-            <ul class="dropdownListCatagories">
-              <li><a href="#">Lorem Ipsum</a></li>
-              <li><a href="#">Lorem Ipsum</a></li>
-              <li><a href="#">Lorem Ipsum</a></li>
-              <li><a href="#">Lorem Ipsum</a></li>
+          <li id="catagory" class="catagories">
+            <a class="hover">
+              <i class="fa-solid fa-plus"></i>
+              Catagories
+            </a>
+            <ul id="sidebar-ul" class="sub-menu">
+              <a href="./pages/graceWall.html">
+                <i class="fa-solid fa-walkie-talkie"></i>
+                Grace Wall
+              </a> <a href="./pages/floorDesigning.html">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                Floor Desinging
+              </a>
+              <a href="./pages/emulsion.html">
+                <i class="fa-solid fa-paint-roller"></i>
+                Emulsion
+              </a>
+              <a href="./pages/wallPainting.html">
+                <i class="fa-solid fa-paintbrush"></i>
+                Wall Painting
+              </a>
+              <a href="./pages/graffyRyshamWall.html">
+                <i class="fa-solid fa-spray-can"></i>
+                Graffy Resham Wall
+              </a>
+              <a href="./pages/zolakot.html">
+                <i class="fa-solid fa-fill"></i>
+                Zolakot
+              </a>
+              <a href="./pages/singtest.html">
+                <i class="fa-solid fa-palette"></i>
+                Singtest
+              </a>
+              <a href="./pages/rollerStackerPosha.html">
+                <i class="fa-solid fa-feather-pointed"></i>
+                Roller Stacker Posha
+              </a>
             </ul>
+          </li>
 
-          </a>
-          <a href="javascript:void(0)">
+
+
+          <a href="./pricing.html">
             <i class="fa-sharp fa-solid fa-money-bill"></i>
             Pricing
           </a>
-          <a href="javascript:void(0)" class=" active-drawer-menu">
-            <i class="fa-solid fa-circle-question"></i>
-            FAQS
+
+
+          <a href="./orderservice.html" class=" active-drawer-menu">
+            <i class="fa-brands fa-first-order"></i>
+            Order a Service
           </a>
-          <a href="javascript:void(0)">
-            <i class="fa-solid fa-building-shield"></i>
-            Terms & Conditions
-          </a>
-          <a href="javascript:void(0)">
+          <a href="./about.html">
             <i class="fa-solid fa-address-card"></i>
             About Us
           </a>
+
         </aside>
 
-        <div class="social">
-          <a href="https://www.linkedin.com/in/florin-cornea-b5118057/" target="_blank">
-            <i class="fa fa-linkedin"></i>
-          </a>
-        </div>
+
       </nav>
 
 
     </div>
-
-
-    <div class="fullbg img_12">
-
-    </div>
-
-
-    <nav class="fixed-top navbar navbar-expand-lg bg-dark navbar-dark bg-gradient">
+    <nav class="sticky-top navbar navbar-expand-lg  bg-black-100 navbar-dark bg-gradient ">
       <div class="container-fluid">
         <a class="navbar-brand">
-
           <img src="logo/logo 2/logo_main.png" class="logo_image" alt="Interior Wall Designer" width="70px">
           <div class="logoname">
             <span>Interior Wall</span>
@@ -95,46 +117,62 @@
 
         </div>
 
-        <div class="collapse navbar-collapse float-end" id="navbarSupportedContent">
+        <div class="ms-5 fs-4 collapse navbar-collapse float-end" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <li class="nav-item-black px-4 nav-item-black-active mx-2">
+              <a href="./index.html" class="text-decoration-none">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Our Services</a>
+            <li class="nav-item-black px-4 mx-2">
+              <a class="text-decoration-none" href="services.html">Our Services</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle " id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Categories
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Grace Wall</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Wall Painting</a>
-                <a class="dropdown-item" href="#">Floor Designing</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Graffy Rysham Wall</a>
-                <a class="dropdown-item" href="#">Singtest</a>
-                <a class="dropdown-item" href="#">Zolakot</a>
-                <a class="dropdown-item" href="#">Roller Stacker Posha</a>
-                <a class="dropdown-item" href="#">Emulsion</a>
+            <li class="nav-item-black  dropdown  px-4 fs-4 mx-2">
+              Catagories
+              <ul class="dropdown_menu_extended dropdown_menu dropdown_menu-1 ">
+                <li class="dropdown_item dropdown_item-1">
+                  <a class="text-decoration-none" href="./pages/graceWall.html">Grace Wall</a>
+                </li>
+                <li class="dropdown_item dropdown_item-2">
+                  <a class=" text-decoration-none" href="./pages/wallPainting.html">Wall Painting</a>
+                </li>
+                <li class="dropdown_item dropdown_item-3">
+                  <a class="text-decoration-none" href="./pages/floorDesigning.html">Floor
+                    Designing</a>
+                </li>
+                <li class="dropdown_item dropdown_item-4">
+                  <a class=" text-decoration-none" href="./pages/graffyRyshamWall.html">Graffy
+                    Rysham Wall</a>
+                </li>
+                <li class="dropdown_item dropdown_item-5">
+                  <a class=" text-decoration-none" href="./pages/singtest.html">Singtest</a>
+                </li>
+                <li class="dropdown_item dropdown_item-6">
+                  <a class="  text-decoration-none" href="./pages/zolakot.html">Zolakot</a>
+                </li>
+                <li class="dropdown_item dropdown_item-7">
+                  <a class="  text-decoration-none" href="./pages/rollerStackerPosha.html">Roller
+                    Stacker Posha</a>
+                </li>
+                <li class="dropdown_item dropdown_item-8">
+                  <a class=" text-decoration-none" href="./pages//emulsion.html">Emulsion</a>
+                </li>
+
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pricing.html">Pricing</a>
+
+
+            <li class="nav-item-black px-4 mx-2">
+              <a class="text-decoration-none" href="pricing.html">Pricing</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">FAQS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+            <li class="nav-item-black  px-4 mx-2">
+              <a class="text-decoration-none" href="./about.html">About Us</a>
             </li>
           </ul>
 
         </div>
       </div>
     </nav>
+
+
 
     <div style="margin-top: 90px; width: 100%; height: 280px; display: flex; align-items: center; ">
       <div style="display: flex;  flex-wrap: wrap;flex-direction: column;" class="container">
@@ -643,8 +681,8 @@
     <script src="./js/jquery_210.js"></script>
     <script src="./js/serviceform.js"></script>
 
-   
-          <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 
 </html>
