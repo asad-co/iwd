@@ -1,4 +1,7 @@
-.st-container,
+.st-container{
+  height: 100%;
+  overflow-y: scroll;
+}
 .st-pusher,
 .st-content {
 	height: 100%;
@@ -7,7 +10,7 @@
 .st-container {
   z-index: -1;
 	position: fixed;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 .st-menu {
 	position: relative;
@@ -59,7 +62,8 @@ aside {
     color: #fff;
     width: 250px;
     padding-left: 20px;
-    height: 100vh;
+    height: fit-content;
+    min-height: 100%;
     background-image: linear-gradient(30deg , #000000,#2e2e2e);
     border-top-right-radius: 80px;
   }

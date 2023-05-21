@@ -5,7 +5,9 @@ const inputField = document.getElementById('serviceInput')
 const dropdown1 = document.getElementById('city')
 const inputField1 = document.getElementById('cityInput')
 let valueArray = [];
-const dropdownArray = [... document.querySelectorAll('li')];
+// const dropdownArray = [... document.querySelectorAll('li')];
+const dropdownArray1 = [... $('#city li')];
+const dropdownArray = [... $('#service li')];
 console.log(typeof dropdownArray)
 
 const closeDropdown = () => {
@@ -77,7 +79,7 @@ document.addEventListener('click', (evt) => {
 
 //dropdown1.classList.add('open');
 //inputField1.focus(); // Demo purposes only
-dropdownArray.forEach(item => {
+dropdownArray1.forEach(item => {
   valueArray.push(item.textContent);
 });
 
@@ -101,7 +103,7 @@ inputField1.addEventListener('input', () => {
   }
 });
 
-dropdownArray.forEach(item => {
+dropdownArray1.forEach(item => {
   item.addEventListener('click', (evt) => {
     inputField1.value = item.textContent;
     dropdownArray.forEach(dropdown => {
