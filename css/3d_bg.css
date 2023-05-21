@@ -76,6 +76,10 @@
   background: rgba(0, 0, 0, 0.7) url('../newimg/img8.jpg');
   background-size:cover;
 }
+.newimg_9{
+  background: rgba(0, 0, 0, 0.7) url('../newimg/img9.jpg');
+  background-size:cover;
+}
 
 .fullbg .air{
   position: fixed;
