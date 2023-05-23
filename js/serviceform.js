@@ -93,9 +93,9 @@ inputField1.addEventListener('input', () => {
   if (inputValue.length > 0) {
     for (let j = 0; j < valueArray1.length; j++) {
       if (!(inputValue.substring(0, inputValue.length) === valueArray1[j].substring(0, inputValue.length).toLowerCase())) {
-        dropdownArray[j].classList.add('closed');
+        dropdownArray1[j].classList.add('closed');
       } else {
-        dropdownArray[j].classList.remove('closed');
+        dropdownArray1[j].classList.remove('closed');
       }
     }
   } else {
@@ -108,7 +108,7 @@ inputField1.addEventListener('input', () => {
 dropdownArray1.forEach(item => {
   item.addEventListener('click', (evt) => {
     inputField1.value = item.textContent;
-    dropdownArray.forEach(dropdown => {
+    dropdownArray1.forEach(dropdown => {
      dropdown1.classList.add('closed');
     });
   });
@@ -123,7 +123,7 @@ inputField1.addEventListener('focus', () => {
 });
 
 inputField1.addEventListener('blur', () => {
-   inputField1.placeholder = 'Select a service';
+   inputField1.placeholder = 'Select city';
  dropdown1.classList.remove('open');
 });
 
