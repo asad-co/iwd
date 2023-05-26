@@ -17,6 +17,7 @@
 }
 .img_10{
   background: rgba(0, 0, 0, 0.7) url('../img/img\ \(10\).jpg');
+  background-size:100% 100%;
 }
 .img_11{
   background: rgba(0, 0, 0, 0.7) url('../img/img\ \(11\).jpg');
